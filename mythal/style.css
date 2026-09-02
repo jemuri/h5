@@ -1,0 +1,122 @@
+/* Mythal Legal Pages — Shared Styles */
+:root {
+  --bg: #0d0d10;
+  --surface: #17171b;
+  --text-primary: #f5f5f7;
+  --text-secondary: #b5b5bc;
+  --text-muted: #8a8a93;
+  --border: #2d2d32;
+  --accent: #d8a45d;
+  --radius: 12px;
+  --max-w: 720px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { font-size: 16px; -webkit-text-size-adjust: 100%; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif;
+  background: var(--bg);
+  color: var(--text-primary);
+  line-height: 1.7;
+  padding: 24px 20px 60px;
+  min-height: 100vh;
+}
+
+.container { max-width: var(--max-w); margin: 0 auto; }
+
+/* Header */
+.header { margin-bottom: 32px; }
+.header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+.header .meta {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+/* Language switcher */
+.lang-switch {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.lang-switch a {
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--text-secondary);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  transition: all .2s;
+}
+.lang-switch a.active,
+.lang-switch a:hover {
+  color: #24180a;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+/* Sections */
+.section {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  margin-bottom: 16px;
+}
+.section h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+}
+.section h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 16px 0 8px;
+  color: var(--text-primary);
+}
+.section p,
+.section li {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+.section p { margin-bottom: 12px; }
+.section p:last-child { margin-bottom: 0; }
+.section ul, .section ol {
+  padding-left: 20px;
+  margin-bottom: 12px;
+}
+.section li { margin-bottom: 6px; }
+.section strong { color: var(--text-primary); font-weight: 600; }
+
+/* Footer */
+.footer {
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+.footer p {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+.footer .brand {
+  font-weight: 600;
+  color: var(--accent);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  body { padding: 16px 16px 40px; }
+  .header h1 { font-size: 24px; }
+  .section { padding: 18px; }
+}
