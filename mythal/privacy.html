@@ -19,12 +19,69 @@
   <div id="content-en">
     <header class="header">
       <h1>Mythal Privacy Policy</h1>
-      <p class="meta">Effective Date: September 1, 2025</p>
+      <p class="meta">Effective Date: September 5, 2026</p>
     </header>
 
     <div class="section">
-      <p>Mythal ("we," "our," or "us") respects your privacy and is committed to protecting the personal information you share with us. This Privacy Policy explains what information we collect, how we use it, and the choices available to you.</p>
+      <p>Mythal ("we," "our," or "us") respects your privacy and is committed to protecting the personal information you share with us. This Privacy Policy explains what information we collect, how we use it, how long we keep it, and the choices and legal rights available to you.</p>
       <p>By using the Mythal application, you consent to the collection and use of your information as described in this policy.</p>
+      <p><strong>California residents:</strong> please read <strong>Section 8 (California Privacy Rights)</strong>, which supplements this policy and controls in the event of any conflict. <strong>Residents of other U.S. states</strong> with comprehensive privacy laws should read <strong>Section 9</strong>.</p>
+      <p>Mythal is an adults-only service. It is intended solely for users aged 18 and over and contains mature, sexually suggestive fictional role-play content.</p>
+    </div>
+
+    <div class="section" id="notice-at-collection">
+      <h2>Notice at Collection</h2>
+      <p>We provide this notice at or before the point where we collect your personal information, as required by the California Consumer Privacy Act (Cal. Civ. Code §1798.100). It summarizes each category we collect, why we collect it, whether it is sold or shared, and how long we keep it.</p>
+      <p><strong>We do not sell or share any category of personal information listed below.</strong> We have never sold or shared personal information, and we do not use it for cross-context behavioral advertising.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Why we collect it</th>
+              <th>How long we keep it</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Identifiers</strong> — email address or Apple subject identifier, nickname, IP address</td>
+              <td>Create and authenticate your account, secure it against unauthorized access, and select the right regional service endpoint</td>
+              <td>For the life of your account. On deletion the account row is anonymized and the IP address is no longer linked to you</td>
+            </tr>
+            <tr>
+              <td><strong>Credentials</strong> — salted password hash</td>
+              <td>Verify your sign-in. We cannot read your password and never store it in plaintext</td>
+              <td>For the life of your account</td>
+            </tr>
+            <tr>
+              <td><strong>Sensitive personal information</strong> — self-declared age band (18–22, 23–25, 26–30, 31–35, 35+), and content revealing sex life or sexual orientation contained in the role-play you create</td>
+              <td>The age band confirms you are over 18 before adult content is unlocked. Adult-content signals are used only to keep replies in character and to route your request to a model that will not refuse mid-scene</td>
+              <td>The age band is kept for the life of your account and deleted when you delete it. Your message content is never stored on our servers, and the keywords matched for routing are not written to production logs</td>
+            </tr>
+            <tr>
+              <td><strong>Commercial information</strong> — Gem balance, purchase records, subscription status</td>
+              <td>Process App Store purchases, grant what you bought, apply the member Gem bonus, and handle refunds</td>
+              <td>Financial records are kept for 7 years after account deletion under the legal-obligation exception (Cal. Civ. Code §1798.105(d)(1))</td>
+            </tr>
+            <tr>
+              <td><strong>Internet or electronic activity</strong> — session timestamps, features used, token and generation counts, error reports</td>
+              <td>Operate and improve the service, meter Gem consumption, and detect fraud or abuse</td>
+              <td>For the life of your account. Usage detail rows are deleted when you delete your account</td>
+            </tr>
+            <tr>
+              <td><strong>Audio information</strong> — your voice when you use press-and-hold dictation</td>
+              <td>Convert speech to text so you can compose messages hands-free</td>
+              <td>Transcription is performed by the operating system's speech framework (Apple Speech on iOS), not by Mythal. Apple may process the audio on your device or on its own servers depending on your system settings. We receive only the resulting text; we never receive, store, or process audio</td>
+            </tr>
+            <tr>
+              <td><strong>Inferences</strong> — content classification and inferred interaction mode</td>
+              <td>Choose an appropriate language model and keep the character's responses consistent</td>
+              <td>Not persisted. In production the routing decision is logged without the matched words</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>For the full description of what we collect, see <strong>Section 1</strong>. For retention across all categories, see <strong>Section 5</strong>. For your rights under California law and how to exercise them, see <strong>Section 8</strong>. To submit a request, email <strong>support@mythal.app</strong>.</p>
     </div>
 
     <div class="section">
@@ -32,153 +89,393 @@
 
       <h3>1.1 Account Information</h3>
       <ul>
-        <li><strong>Email address</strong> — for account creation and authentication</li>
-        <li><strong>Apple ID / Google ID token</strong> — for social sign-in (we store only the subject identifier, not your Apple/Google password)</li>
+        <li><strong>Email address</strong> — for account creation and authentication (only if you register by email)</li>
+        <li><strong>Apple ID subject identifier</strong> — for Sign in with Apple. We store only the opaque subject identifier issued by Apple, never your Apple password</li>
+        <li><strong>Google ID subject identifier</strong> — only for accounts that previously registered with Google Sign-In. Google Sign-In is not currently offered as a registration option in the app, but the identifier is retained for those existing accounts so they can still sign in</li>
+        <li><strong>Password</strong> — stored only as a salted cryptographic hash; never in plaintext and never recoverable by us</li>
         <li><strong>Nickname</strong> — your display name within the app</li>
         <li><strong>Language preference</strong> — for interface localization</li>
+        <li><strong>Profile details you choose to provide</strong> — avatar image, self-description, gender, and an age range you select during age verification</li>
       </ul>
 
-      <h3>1.2 Usage Data</h3>
+      <h3>1.2 Age Verification Data</h3>
+      <p>Because Mythal contains adult content, we verify that you are at least 18 before granting access. We collect:</p>
       <ul>
-        <li><strong>Chat messages</strong> — prompts you send and AI-generated responses, stored for conversation history and service improvement</li>
-        <li><strong>Character data</strong> — characters you create, including names, descriptions, and AI-generated visuals</li>
-        <li><strong>Interaction logs</strong> — session timestamps, features used, and error reports</li>
+        <li><strong>Self-declared age range</strong> — one of a fixed set of bands (18–22, 23–25, 26–30, 31–35, 35+). We do not require and do not ask for your exact date of birth</li>
+        <li><strong>Verification record</strong> — the method used and the timestamp of verification</li>
       </ul>
 
-      <h3>1.3 Transaction Data</h3>
+      <h3>1.3 Content You Create</h3>
       <ul>
-        <li><strong>Purchase receipts</strong> — Apple App Store transaction IDs and receipts for subscription and Gem management</li>
-        <li><strong>Payment records</strong> — order IDs, product IDs, and transaction amounts (processed by Apple; we do not store credit card or payment details)</li>
+        <li><strong>Characters you create</strong> — names, short bios, backgrounds, opening messages, tags, and the AI-generated portrait images you produce and choose to keep. These <strong>are</strong> stored on our servers so that public characters can be discovered by other users</li>
+        <li><strong>Feedback you submit</strong> — the text and any screenshots or images you attach when reporting a problem</li>
+      </ul>
+      <p><strong>Personas are stored only on your device.</strong> The user-side personas you define for yourself in role-play — including their names, descriptions and persona images — are kept in the app's local storage on your device. They are never uploaded to our servers or to object storage. When you chat, a persona's text is included in the prompt and transmitted for that request only, exactly as described for messages in Section 1.4.</p>
+
+      <h3>1.4 Conversation Data — Important</h3>
+      <p><strong>Our servers do not store your chat messages.</strong> This is a deliberate architectural choice:</p>
+      <ul>
+        <li>Your prompts and the AI's responses are transmitted to our server only for the duration of the request, so that they can be forwarded to an AI model provider and streamed back to you. <strong>They are not written to any server-side database.</strong></li>
+        <li>Conversation history is stored <strong>only on your own device</strong>, in the app's local database. If you delete the app or its data, that history is gone and we cannot recover it for you.</li>
+        <li>Because we do not retain messages server-side, we cannot disclose, export, or restore your conversation history in response to a data request. A copy of your conversations exists only on your device.</li>
+        <li>Conversation <strong>metadata</strong> is retained server-side — for example the existence of a chat session, its title, the model used, and timestamps. Metadata contains neither your message text nor the AI's responses.</li>
+      </ul>
+      <p>Our production server logs likewise do <strong>not</strong> contain the text of your messages or the AI's replies. Logs record operational signals only (request identifiers, model names, latency, token counts, error codes).</p>
+
+      <h3>1.5 Voice Input</h3>
+      <ul>
+        <li>When you use press-and-hold voice input, speech recognition is performed by the <strong>operating system's own speech framework</strong> (Apple Speech on iOS). Mythal receives the resulting text, not an audio recording.</li>
+        <li><strong>We do not record, store, or transmit your voice.</strong> Any audio processing is governed by Apple's privacy policy, not ours.</li>
+        <li>Character voice playback (text-to-speech) synthesizes audio from text on request. We do not collect or clone your voice, and we do not build a voiceprint from it.</li>
       </ul>
 
-      <h3>1.4 Technical Data</h3>
+      <h3>1.6 Transaction Data</h3>
       <ul>
-        <li>Device model, operating system version, and app version</li>
-        <li>IP address (for security and regional model selection)</li>
-        <li>Country code (from device locale, for content regionalization)</li>
-        <li>Network type (WiFi/cellular)</li>
+        <li><strong>Purchase records</strong> — Apple App Store transaction identifiers, product identifiers, amounts, currency, and order status, used to verify and fulfil purchases</li>
+        <li><strong>Receipt data</strong> — the Apple transaction payload, retained so we can re-verify subscription renewals and process refunds</li>
+        <li><strong>Virtual currency ledger</strong> — your Gem balance and a record of each credit and debit</li>
+        <li>We do <strong>not</strong> receive or store your credit card number, bank details, or any other payment instrument. All payment processing is handled by Apple.</li>
       </ul>
+
+      <h3>1.7 Technical Data</h3>
+      <ul>
+        <li><strong>IP address</strong> — used for rate limiting, abuse prevention, and to select a region-appropriate AI model workspace. We use it to infer an approximate country, not a precise location</li>
+        <li><strong>Country code</strong> — derived from your device's region setting (not from GPS), used to select regional compliance rules</li>
+        <li><strong>Time zone</strong> — derived from your device, used for daily check-in scheduling</li>
+        <li><strong>Operating system name and app language tag</strong> — sent with each request for compatibility and localization</li>
+        <li><strong>HTTP user agent string</strong> — received automatically by any web server, used for debugging</li>
+        <li><strong>Usage metrics</strong> — AI model names used, token counts, Gem costs, feature interactions, and error reports. These are aggregate operational figures and do not include the content of your messages</li>
+      </ul>
+      <p><strong>We do not collect:</strong> precise GPS location, your contacts, your photo library beyond images you explicitly upload, advertising identifiers (IDFA), or any cross-app tracking identifier.</p>
     </div>
 
     <div class="section">
       <h2>2. How We Use Your Information</h2>
       <p>We use the collected information to:</p>
       <ul>
-        <li><strong>Provide the Service</strong> — authenticate your identity, process conversations, generate AI content, and manage your account</li>
-        <li><strong>Process transactions</strong> — verify purchases, manage subscriptions, and credit Gems</li>
-        <li><strong>Improve the Service</strong> — analyze usage patterns, debug issues, and develop new features</li>
-        <li><strong>Ensure safety</strong> — detect and prevent fraud, abuse, and security incidents</li>
-        <li><strong>Communicate</strong> — send service-related notifications (e.g., subscription renewals, policy updates)</li>
+        <li><strong>Provide the Service</strong> — authenticate you, route your prompts to an AI model, stream responses back, and maintain your account</li>
+        <li><strong>Enforce age restrictions</strong> — confirm you are 18 or over before granting access to adult content</li>
+        <li><strong>Process transactions</strong> — verify purchases, manage subscriptions, credit and debit Gems, and handle refunds</li>
+        <li><strong>Select an appropriate model</strong> — route certain mature-content conversations to AI providers whose content policies permit them, so the service does not break mid-scene. This routing uses keyword signals derived from your message; see Section 8.4</li>
+        <li><strong>Operate and secure the Service</strong> — rate limiting, fraud and abuse prevention, debugging, and error diagnosis</li>
+        <li><strong>Improve the Service</strong> — analyze aggregate usage metrics and develop new features</li>
+        <li><strong>Communicate</strong> — send service-related notices such as subscription renewals and policy updates</li>
       </ul>
+      <p>We do not use your personal information for automated decision-making that produces legal or similarly significant effects concerning you.</p>
     </div>
 
     <div class="section">
-      <h2>3. AI Processing & Your Data</h2>
-      <p>When you interact with AI characters, your messages are sent to third-party AI model providers for processing:</p>
+      <h2>3. AI Processing &amp; Your Data</h2>
+      <p>When you interact with AI characters, your message text is transmitted to third-party AI model providers so that a response can be generated. These providers act as our <strong>service providers</strong> — they process your content on our instructions to deliver the feature you requested:</p>
       <ul>
-        <li><strong>Text generation</strong> — powered by registered LLM providers (e.g., Alibaba Cloud, DeepSeek) using OpenAI-compatible API protocols</li>
-        <li><strong>Image generation</strong> — processed by AI image model providers (e.g., FLUX, Wan, xAI Grok)</li>
-        <li><strong>Video generation</strong> — processed by AI video model providers</li>
-        <li><strong>Speech synthesis (TTS)</strong> — processed by text-to-speech service providers</li>
+        <li><strong>Text generation</strong> — Alibaba Cloud Model Studio (Qwen family) and OpenRouter-routed open models, via OpenAI-compatible APIs</li>
+        <li><strong>Image generation</strong> — Alibaba Cloud (Wan), xAI (Grok Imagine), and OpenRouter-routed models (FLUX)</li>
+        <li><strong>Video generation</strong> — third-party AI video model providers</li>
+        <li><strong>Speech synthesis (TTS)</strong> — third-party text-to-speech providers</li>
+        <li><strong>Cloud infrastructure and object storage</strong> — for hosting and for storing images you generate</li>
       </ul>
-      <p>These providers process your data under their own privacy policies and data handling practices. We select providers that commit to not using API inputs for model training. We do not send personally identifiable information (such as your email or name) to these AI providers — only the content of your prompts and conversation context.</p>
+      <p><strong>What we send:</strong> the content of your prompt, the conversation context needed to generate a coherent reply, and — for image generation — reference images such as your character's portrait and, if you have set one, your own avatar. We do not send your email address, nickname, password, payment data, or other account identifiers to these providers.</p>
+      <p><strong>Provider data practices:</strong> each provider processes this content under its own privacy policy and terms. We prefer providers whose published terms state that API inputs are not used to train their models, and we select for that where the option exists. However, we do not control these providers' internal processing, and we cannot give you an absolute guarantee about their retention or handling. Where a provider's terms permit retention for abuse monitoring, your prompt content may be held by that provider for a limited period under its own policy. You should assume that anything you type into a conversation may be read by the provider's systems.</p>
+      <p><strong>Consequence for you:</strong> do not include in your prompts any information you would not want a third-party AI provider to process — in particular, do not include real people's names, private identifying details, or information about third parties who have not consented.</p>
     </div>
 
     <div class="section">
       <h2>4. Data Sharing</h2>
-      <p><strong>We do not sell your personal information to third parties.</strong></p>
-      <p>We may share your information only in the following circumstances:</p>
+      <p><strong>We do not sell your personal information. We do not share your personal information for cross-context behavioral advertising.</strong> We have not done so at any time in the preceding twelve months.</p>
+      <p>We disclose personal information only in the following circumstances:</p>
       <ul>
-        <li><strong>Service providers</strong> — with third-party companies that help us operate the Service (AI model providers, cloud hosting, payment processors), under contractual obligations to protect your data</li>
-        <li><strong>Legal requirements</strong> — when required by law, court order, or governmental authority</li>
-        <li><strong>Safety</strong> — to protect the rights, property, or safety of Mythal, our users, or the public</li>
-        <li><strong>Business transfers</strong> — in connection with a merger, acquisition, or sale of assets</li>
+        <li><strong>Service providers</strong> — to companies that help us operate the Service (AI model providers, cloud hosting and object storage, and Apple for payment processing), each engaged for a business purpose and bound by obligations to protect your data and to use it only as we instruct</li>
+        <li><strong>Legal requirements</strong> — when required by law, subpoena, court order, or governmental authority</li>
+        <li><strong>Safety</strong> — to protect the rights, property, or safety of Mythal, our users, or the public, including investigating suspected unlawful content</li>
+        <li><strong>Business transfers</strong> — in connection with a merger, acquisition, reorganization, or sale of assets, in which case your information would transfer as a business asset and the acquirer would be bound by this policy</li>
+        <li><strong>With your consent</strong> — where you have directed us to disclose something, for example when you submit feedback with an attached screenshot</li>
       </ul>
+      <p>Characters you create with <strong>public</strong> visibility are visible to other users of the Service, together with the name, bio, portrait, and tags you chose for them. Content you mark <strong>private</strong> is not shown to other users.</p>
     </div>
 
     <div class="section">
       <h2>5. Data Retention</h2>
-      <p>We retain your information for as long as your account is active or as needed to provide the Service. Specifically:</p>
+      <p>We keep personal information only as long as needed for the purposes described in this policy, or as required by law. Our retention periods by category:</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Category</th><th>Retention period</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Chat message text and AI replies</td><td><strong>Never retained on our servers.</strong> Held only on your device, for as long as you keep the app's local data</td></tr>
+            <tr><td>Account profile (email, nickname, avatar, gender, age range)</td><td>While your account is active. <strong>Anonymized immediately</strong> upon account deletion</td></tr>
+            <tr><td>Characters you created, and generated images and videos</td><td>While your account is active. Deleted upon account deletion, including stored image and video files</td></tr>
+            <tr><td>Personas</td><td><strong>Never retained on our servers.</strong> Held only on your device, for as long as you keep the app's local data</td></tr>
+            <tr><td>Chat session metadata (titles, model used, timestamps)</td><td>While your account is active. Deleted upon account deletion</td></tr>
+            <tr><td>Age verification record</td><td>While your account is active. Deleted upon account deletion</td></tr>
+            <tr><td>AI usage metrics (model names, token counts, Gem costs)</td><td>While your account is active. Deleted upon account deletion</td></tr>
+            <tr><td>Feedback you submitted</td><td>Until resolved, then deleted. Deleted upon account deletion</td></tr>
+            <tr><td>Operational server logs (no message content)</td><td>Rolling basis, <strong>no longer than 90 days</strong></td></tr>
+            <tr><td>Transaction, order, subscription and Gem ledger records</td><td><strong>Retained for 7 years after the transaction, and retained after account deletion.</strong> See below</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <h3>5.1 What account deletion removes</h3>
+      <p>When you use <strong>Delete Account</strong> in the app, deletion is <strong>immediate</strong> — not deferred. We then:</p>
       <ul>
-        <li><strong>Account data</strong> — retained while the account is active</li>
-        <li><strong>Chat history</strong> — retained for the duration of each conversation, subject to context window limits</li>
-        <li><strong>Transaction records</strong> — retained for at least 7 years as required by financial regulations</li>
-        <li><strong>AI usage records</strong> — retained for billing audit and service improvement</li>
+        <li>Irreversibly anonymize your account record: email, nickname, avatar, password hash, gender, age range, self-description, and social sign-in identifiers are cleared, and the account is marked deleted so it can no longer be used to sign in</li>
+        <li>Delete your characters, chat sessions, relationships, activity records, feedback, age verification record, daily check-ins, task records, and AI usage metrics</li>
+        <li>Delete your uploaded and generated image and video files from object storage</li>
+        <li>Revoke all authentication tokens, signing you out on every device</li>
+        <li>For Sign in with Apple accounts, revoke the Apple authorization so Mythal no longer appears in your Apple ID connected apps</li>
       </ul>
-      <p>When you delete your account, we will delete your personal data within 30 days, except where retention is required by law.</p>
+      <p>Because your personas and conversation history are stored only on your device, they are outside our deletion process — they are removed when you delete the app or clear its data, and we hold no server-side copy of either.</p>
+      <h3>5.2 What account deletion does not remove, and why</h3>
+      <p>The following are deliberately retained after account deletion, in a form no longer linked to any identifying detail about you:</p>
+      <ul>
+        <li><strong>Financial and transaction records</strong> — order records, subscription records, Apple receipt data, and the Gem ledger, retained for <strong>7 years</strong></li>
+      </ul>
+      <p><strong>Legal basis for retention:</strong> these records are kept to comply with tax, accounting, and consumer-protection law, to defend or resolve payment disputes and chargebacks, and to process refunds and subscription reconciliations that may arrive after deletion. This falls within the exceptions to the right to delete under CCPA §1798.105(d)(1) (complying with a legal obligation) and §1798.105(d)(3) (detecting and protecting against fraudulent or illegal activity). After the 7-year period these records are deleted.</p>
+      <p><strong>Unpaid subscription:</strong> deleting your Mythal account does <strong>not</strong> cancel an App Store subscription. You must cancel separately in your Apple subscription settings to avoid further charges. The app reminds you of this on the deletion screen.</p>
     </div>
 
     <div class="section">
       <h2>6. Data Security</h2>
       <p>We implement industry-standard security measures to protect your information:</p>
       <ul>
-        <li>All data in transit is encrypted using TLS/SSL</li>
-        <li>Passwords are hashed and never stored in plaintext</li>
-        <li>Authentication tokens are securely managed with automatic expiration</li>
-        <li>Access to personal data is restricted to authorized personnel</li>
+        <li>All data in transit is encrypted using TLS</li>
+        <li>Passwords are salted and hashed; never stored in plaintext</li>
+        <li>Authentication tokens are stored as irreversible digests, are rotated on refresh, and expire automatically</li>
+        <li>Access to production data is restricted to authorized personnel</li>
+        <li>Because chat content is never persisted server-side, a server compromise cannot expose your conversation history</li>
       </ul>
       <p>However, no method of transmission over the Internet or electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your information, we cannot guarantee absolute security.</p>
     </div>
 
     <div class="section">
-      <h2>7. Your Rights</h2>
-      <p>Depending on your jurisdiction, you may have the following rights:</p>
+      <h2>7. Your Privacy Rights (General)</h2>
+      <p>Depending on where you live, you may have some or all of the following rights:</p>
       <ul>
         <li><strong>Access</strong> — request a copy of the personal data we hold about you</li>
-        <li><strong>Correction</strong> — request correction of inaccurate data</li>
-        <li><strong>Deletion</strong> — request deletion of your personal data (via the "Delete Account" feature in the app)</li>
+        <li><strong>Correction</strong> — request correction of inaccurate data. You can also edit your nickname, avatar, gender, age range, self-description and language directly in the app</li>
+        <li><strong>Deletion</strong> — delete your personal data via <strong>Delete Account</strong> in the app (Settings → More → Delete Account), which takes effect immediately</li>
         <li><strong>Portability</strong> — request your data in a machine-readable format</li>
-        <li><strong>Withdrawal of consent</strong> — you may stop using the Service and delete your account at any time</li>
+        <li><strong>Withdrawal of consent</strong> — stop using the Service and delete your account at any time</li>
+        <li><strong>Objection and restriction</strong> — object to or restrict certain processing where your local law allows</li>
       </ul>
-      <p>To exercise these rights, contact us at <strong>support@mythal.app</strong>.</p>
+      <p><strong>To exercise any right:</strong> email <strong>support@mythal.app</strong> with the subject line "Privacy Request". See Section 8.9 for how we verify requests and how long we take to respond.</p>
+      <p><strong>Important limitation on access and portability:</strong> because we do not store your chat messages server-side (Section 1.4), we cannot provide your conversation history in a data copy. That data exists only on your device. Everything else we hold about you — profile, characters, transactions, usage metrics — can be provided.</p>
     </div>
 
     <div class="section">
-      <h2>8. Children's Privacy</h2>
-      <p>The Service is intended for users aged 18 and older. We do not knowingly collect personal information from children under 18. If we discover that we have collected information from a child under 18, we will delete it promptly.</p>
-      <p>If you believe we have inadvertently collected information from a minor, please contact us at <strong>support@mythal.app</strong>.</p>
+      <h2>8. California Privacy Rights (CCPA / CPRA)</h2>
+      <p>This section applies if you are a California resident. It supplements the rest of this policy and controls in the event of any conflict. We use the terms "personal information," "sell," "share," "sensitive personal information," "business purpose," "service provider," and "contractor" as defined by the California Consumer Privacy Act of 2018 as amended by the California Privacy Rights Act of 2020 (together, the "CCPA").</p>
+
+      <h3>8.1 We Do Not Sell or Share Your Personal Information</h3>
+      <p><strong>In the preceding twelve (12) months, Mythal has not sold personal information and has not shared personal information for cross-context behavioral advertising.</strong> We do not do either, and we have no present intention to begin.</p>
+      <p>Concretely: we use no third-party advertising SDKs, no attribution or ad-network SDKs, no cross-app or cross-site tracking, and we do not access the Apple advertising identifier (IDFA). We do not disclose personal information to anyone in exchange for money or other valuable consideration.</p>
+      <p>Because we neither sell nor share, we are not required to provide a "Do Not Sell or Share My Personal Information" link or to honor Global Privacy Control (GPC) signals as an opt-out request. There is no sale or sharing to opt out of. If that ever changes, we will update this policy, add the required link, and honor opt-out preference signals before doing so.</p>
+
+      <h3>8.2 Categories of Personal Information Collected (Preceding 12 Months)</h3>
+      <p>The table below uses the categories defined in Cal. Civ. Code §1798.140(v). "Disclosed for a business purpose" means shared with a service provider or contractor to operate the Service.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>CCPA category</th><th>Examples we collect</th><th>Sold</th><th>Shared</th><th>Disclosed for a business purpose</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>A. Identifiers</td>
+              <td>Email address; Apple/Google subject identifier; internal user ID; IP address</td>
+              <td>No</td><td>No</td><td>Yes — cloud hosting provider</td>
+            </tr>
+            <tr>
+              <td>B. Personal information (Cal. Civ. Code §1798.80(e))</td>
+              <td>Nickname; account credentials (hashed password)</td>
+              <td>No</td><td>No</td><td>Yes — cloud hosting provider</td>
+            </tr>
+            <tr>
+              <td>C. Protected classification characteristics</td>
+              <td>Self-selected gender; self-declared age range</td>
+              <td>No</td><td>No</td><td>Yes — cloud hosting provider</td>
+            </tr>
+            <tr>
+              <td>D. Commercial information</td>
+              <td>Purchase and subscription records; Apple receipt data; Gem balance and ledger; products considered or purchased</td>
+              <td>No</td><td>No</td><td>Yes — Apple (payment processing), cloud hosting provider</td>
+            </tr>
+            <tr>
+              <td>E. Biometric information</td>
+              <td><strong>None collected.</strong> We do not collect fingerprints, face geometry, or voiceprints</td>
+              <td>No</td><td>No</td><td>No</td>
+            </tr>
+            <tr>
+              <td>F. Internet or other electronic network activity</td>
+              <td>Feature interactions; AI model names used; token counts; Gem costs; error reports; session metadata; content you create and store with us (characters, feedback)</td>
+              <td>No</td><td>No</td><td>Yes — AI model providers, cloud hosting provider</td>
+            </tr>
+            <tr>
+              <td>G. Geolocation data</td>
+              <td><strong>Coarse only</strong> — country inferred from IP address and from your device region setting; device time zone. We collect <strong>no precise geolocation</strong> and no GPS data</td>
+              <td>No</td><td>No</td><td>Yes — cloud hosting provider</td>
+            </tr>
+            <tr>
+              <td>H. Audio, electronic, visual, or similar information</td>
+              <td>Images you upload (avatar, character reference images, feedback screenshots); images and videos you generate. <strong>No audio recordings</strong> — voice input is transcribed by the operating system's speech framework, which may process audio on your device or on its own servers; we receive the resulting text only</td>
+              <td>No</td><td>No</td><td>Yes — AI image/video providers, object storage</td>
+            </tr>
+            <tr>
+              <td>I. Professional or employment information</td>
+              <td><strong>None collected</strong></td>
+              <td>No</td><td>No</td><td>No</td>
+            </tr>
+            <tr>
+              <td>J. Education information</td>
+              <td><strong>None collected</strong></td>
+              <td>No</td><td>No</td><td>No</td>
+            </tr>
+            <tr>
+              <td>K. Inferences drawn from the above</td>
+              <td>Content-maturity classification of a conversation (used only to pick an AI model); inferred preferred interaction mode (chat vs. story); character affinity and relationship progression metrics. See 8.4</td>
+              <td>No</td><td>No</td><td>No — computed and used internally only</td>
+            </tr>
+            <tr>
+              <td>L. Sensitive personal information</td>
+              <td>See 8.3</td>
+              <td>No</td><td>No</td><td>Yes — AI model providers (message content only), cloud hosting provider</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>We retain each category for the periods stated in Section 5.</p>
+
+      <h3>8.3 Sensitive Personal Information</h3>
+      <p>Under Cal. Civ. Code §1798.140(ae), we collect the following sensitive personal information:</p>
+      <ul>
+        <li><strong>Account credentials</strong> — your password, stored only as a salted hash and used solely to authenticate you</li>
+        <li><strong>Information revealing sex life or sexual orientation</strong> — Mythal is an adult role-play service. The fictional conversations you choose to have, the characters you create, and the content-maturity signals we derive from them may reveal aspects of your sex life or sexual orientation. We treat this as sensitive personal information</li>
+        <li><strong>Contents of your messages</strong> — your prompts are transmitted to AI model providers to generate a reply. They are not stored on our servers (Section 1.4)</li>
+      </ul>
+      <p><strong>We do not collect</strong> your Social Security number, driver's license or passport number, financial account numbers with credentials, precise geolocation, racial or ethnic origin, religious or philosophical beliefs, union membership, genetic data, biometric data for identification purposes, or health data.</p>
+      <h4>Your right to limit</h4>
+      <p>Under Cal. Civ. Code §1798.121 you have the right to direct us to limit our use and disclosure of sensitive personal information to that which is <strong>necessary to perform the services or provide the goods reasonably expected by an average consumer</strong>. We already do this: we use sensitive personal information only to authenticate you, deliver the role-play content you request, verify you are an adult, and process your payments. We do not use it for any additional purpose, and we do not use it to infer characteristics about you for profiling beyond what is described in 8.4.</p>
+      <p>If you wish to formally exercise the right to limit, email <strong>support@mythal.app</strong> with the subject "CCPA — Right to Limit". Because our processing is already confined to what is necessary, exercising this right will not change the Service you receive. If you want the sensitive content itself gone, use <strong>Delete Account</strong>, which removes it immediately.</p>
+
+      <h3>8.4 Inferences and Content Classification</h3>
+      <p>To keep adult role-play from breaking mid-scene, we classify each conversation's maturity level and route mature conversations to AI providers whose content policies permit them. You should understand exactly what this involves:</p>
+      <ul>
+        <li>We compare your message text against a fixed internal keyword list to detect mature content, and we infer the conversation language so the right model is selected</li>
+        <li>The result is a routing decision only. It is <strong>not</strong> used to build an advertising profile, is <strong>not</strong> sold or shared, is <strong>not</strong> used for any decision with legal or similarly significant effects on you, and is <strong>not</strong> shown to other users</li>
+        <li>In production, the matched keywords are <strong>not</strong> written to our logs. Logs record only the routing outcome (which model was selected and why, by category)</li>
+        <li>We separately infer a preferred interaction mode (free chat vs. immersive story) when you create a character, and we track per-character relationship progression to keep long-running stories coherent. Both stay internal</li>
+      </ul>
+
+      <h3>8.5 Sources of Personal Information</h3>
+      <ul>
+        <li><strong>Directly from you</strong> — registration details, profile edits, age verification, characters and personas you create, prompts you send, images you upload, feedback you submit, purchases you make</li>
+        <li><strong>Automatically from your device</strong> — IP address, device region, time zone, operating system, app language, user agent, usage metrics</li>
+        <li><strong>From Apple or Google</strong> — the subject identifier and, where you allow it, a private relay email when you use Sign in with Apple or Google Sign-In</li>
+        <li><strong>From Apple's payment systems</strong> — transaction and subscription status, renewal notices, and refund notifications</li>
+        <li><strong>Derived by us</strong> — the inferences described in 8.4</li>
+      </ul>
+      <p>We do not purchase personal information from data brokers and we do not collect it from third parties for advertising purposes.</p>
+
+      <h3>8.6 Business and Commercial Purposes</h3>
+      <p>We collect and use the categories in 8.2 for these business and commercial purposes: providing and operating the Service you requested; verifying your age so we can lawfully offer adult content; authenticating you; processing payments and managing virtual currency; selecting and routing to appropriate AI models; detecting and preventing fraud, abuse, and security incidents; debugging and maintaining the Service; complying with legal, tax, and accounting obligations; and improving and developing the Service.</p>
+
+      <h3>8.7 Recipients of Disclosures for a Business Purpose</h3>
+      <p>In the preceding 12 months we disclosed the categories listed in 8.2 to these categories of service providers and contractors: AI model providers (text, image, video, speech synthesis); cloud hosting and object storage providers; Apple Inc. (app distribution, payment processing, subscription management, and Sign in with Apple); and Google (Google Sign-In). Each is engaged for a business purpose and is contractually restricted from using your personal information for its own purposes.</p>
+
+      <h3>8.8 Your California Rights</h3>
+      <ul>
+        <li><strong>Right to Know / Access</strong> (§1798.100, §1798.110) — request the categories of personal information we collected about you, the sources, the business purposes, the categories of third parties we disclosed it to, and the specific pieces of information we hold. You may make this request twice in a 12-month period</li>
+        <li><strong>Right to Delete</strong> (§1798.105) — request deletion of personal information we collected from you. <strong>The fastest route is the in-app Delete Account feature, which takes effect immediately and needs no request to us.</strong> You may also request deletion by email. Exceptions in §1798.105(d) apply, principally the 7-year retention of financial records described in Section 5.2</li>
+        <li><strong>Right to Correct</strong> (§1798.106) — request correction of inaccurate personal information. Most fields are editable directly in the app</li>
+        <li><strong>Right to Opt-Out of Sale or Sharing</strong> (§1798.120) — <strong>not applicable</strong>, because we neither sell nor share. There is nothing to opt out of</li>
+        <li><strong>Right to Limit Use of Sensitive Personal Information</strong> (§1798.121) — see 8.3</li>
+        <li><strong>Right to Non-Discrimination</strong> (§1798.125) — we will not deny you the Service, charge different prices, provide a different level of quality, or suggest any of these things, because you exercised a CCPA right</li>
+      </ul>
+
+      <h3>8.9 How to Exercise Your Rights</h3>
+      <p><strong>Method.</strong> Email <strong>support@mythal.app</strong> with the subject line "CCPA Request" followed by the right you are exercising (for example "CCPA Request — Delete"). We operate exclusively online and do not maintain a physical retail presence, so email is our designated method under §1798.130(a)(1). You may also use <strong>Delete Account</strong> in the app for deletion.</p>
+      <p><strong>Verifiable consumer requests.</strong> Before responding, we must verify that you are the person whose data it is. We verify by matching information you provide against information already in our records — typically the email address on your account plus your nickname, and, for Sign in with Apple accounts, a re-authentication through Apple. We will never ask you for your password. If we cannot establish that you are the consumer the data relates to, we cannot respond, and we will explain why. Requests to delete are also satisfied when you use in-app Delete Account, which is already authenticated by your signed-in session.</p>
+      <p><strong>Authorized agents.</strong> You may designate an authorized agent to make a request on your behalf under §1798.185(a)(7)–(8). When an agent submits a request we may require proof of your written authorization (or evidence the agent holds a power of attorney under Probate Code §4000–4465), and we may also require you to verify your own identity directly with us or to confirm you gave the agent authority. We will not deny a request solely because it came through an authorized agent.</p>
+      <p><strong>Response timing.</strong> We will acknowledge receipt within 10 business days and respond to a verifiable request within <strong>45 calendar days</strong> of receipt. If we need more time — up to another 45 days — we will tell you why within the first 45 days. We may extend only once.</p>
+      <p><strong>Format.</strong> Access responses are provided in a portable, readily usable, machine-readable format (JSON), by email or secure download, free of charge. If you ask us to provide or delete specific pieces of information more than twice in a 12-month period, or if a request is manifestly unfounded or excessive, we may charge a reasonable fee or refuse, and we will explain that decision.</p>
+      <p><strong>If we decline.</strong> If we deny or limit your request, we will explain the specific reason and the CCPA provision we relied on. You may contact us again to ask us to reconsider. You also have the right to file a complaint with the <strong>California Attorney General</strong> (oag.ca.gov/privacy/consumer-privacy-rights) or the <strong>California Privacy Protection Agency</strong> (cppa.ca.gov). We do not require you to create an account to submit a request, and we will never require you to pay a fee merely for exercising a right.</p>
+
+      <h3>8.10 California Residents Under 16</h3>
+      <p>Mythal is restricted to users aged 18 and over, and we gate access behind an age verification step. We do not have actual knowledge that we have sold or shared the personal information of any consumer under 16. Because we do not sell or share personal information at all, we do not need to obtain the opt-in consent required by §1798.120(c) for consumers under 16, or the parental opt-in required by §1798.120(c)(2) for consumers under 13. If we learn that a user is under 18, we will remove their account and data.</p>
+
+      <h3>8.11 "Shine the Light" (Cal. Civ. Code §1798.83)</h3>
+      <p>California's Shine the Light law permits you to request information about personal information we disclosed to third parties for their direct marketing purposes in the preceding calendar year. <strong>We disclose no personal information to any third party for their direct marketing purposes.</strong> There is therefore nothing to report under this law. If you nonetheless wish to make a request, email <strong>support@mythal.app</strong> with the subject "Shine the Light Request".</p>
+
+      <h3>8.12 Changes to Our Sale or Sharing Practices</h3>
+      <p>If Mythal ever begins to sell or share personal information, we will update this policy, add a "Do Not Sell or Share My Personal Information" link in the app and on this page, begin honoring Global Privacy Control and equivalent opt-out preference signals, and — for any consumer under 16 — obtain the opt-in consent the CCPA requires. We will not do any of these things silently.</p>
     </div>
 
     <div class="section">
-      <h2>9. International Data Transfers</h2>
-      <p>Your information may be transferred to and processed in countries other than your own. Our servers are located in the United States. By using the Service, you consent to the transfer of your data to the United States and other jurisdictions where our service providers operate.</p>
-      <p>We ensure that international transfers comply with applicable data protection laws and that appropriate safeguards are in place.</p>
+      <h2>9. Other U.S. State Privacy Rights</h2>
+      <p>If you live in a state with a comprehensive consumer privacy law — including Virginia (VCDPA), Colorado (CPA), Connecticut (CTDPA), Utah (UCPA), Texas (TDPSA), Oregon, Delaware, Iowa, Montana, Nebraska, New Hampshire, New Jersey, Tennessee, and Minnesota — you may have rights similar to those in Section 8: the right to confirm whether we process your data, to access it, to correct it, to delete it, to obtain a portable copy, to opt out of targeted advertising or the sale of your data, and to appeal a refusal.</p>
+      <p>Because Mythal does not sell personal information, does not use it for targeted advertising, and does not profile you in furtherance of decisions with legal or similarly significant effects, <strong>there is no targeted advertising, sale, or profiling to opt out of</strong>.</p>
+      <p>To exercise any right, email <strong>support@mythal.app</strong> with the subject "Privacy Request". We will respond within the period your state's law requires — generally 45 days, with one permitted extension. If we decline your request we will give you our reason and, where your state's law provides one, tell you how to appeal. You may also contact your state Attorney General.</p>
+      <p><strong>Virginia residents:</strong> our Terms of Service are governed by Virginia law. Nothing in those Terms limits the rights you hold under the Virginia Consumer Data Protection Act.</p>
     </div>
 
     <div class="section">
-      <h2>10. Third-Party Services</h2>
+      <h2>10. Children's Privacy</h2>
+      <p>The Service is intended solely for users aged 18 and older, and it contains mature fictional content. We do not knowingly collect personal information from anyone under 18. Age verification is required before access is granted, and users who indicate they are under 18 are blocked.</p>
+      <p>Mythal is not directed to children, is not designed for children, and does not qualify as a service "directed to children" under COPPA. If we discover that we have collected information from a person under 18, we will delete it promptly. If you believe we have inadvertently collected information from a minor, contact <strong>support@mythal.app</strong>.</p>
+    </div>
+
+    <div class="section">
+      <h2>11. International Data Transfers</h2>
+      <p>Mythal is operated from the United States and our servers are located there. If you use the Service from outside the United States, your information will be transferred to, stored in, and processed in the United States, which may not provide the same level of protection as your home jurisdiction.</p>
+      <p>Your prompt content is also transmitted to AI model providers whose infrastructure may be located outside the United States — including Alibaba Cloud (China and Singapore regions), xAI (United States), and OpenRouter, which routes to model hosts in various jurisdictions. This transfer is necessary to provide the AI generation you request.</p>
+      <p><strong>For users in the EEA, UK, and Switzerland:</strong> our legal bases for processing are performance of a contract with you (providing the Service you asked for), our legitimate interests in operating and securing the Service, and compliance with legal obligations (age verification, tax and financial record-keeping). Where we rely on legitimate interests, they are not overridden by your rights, because chat content is not persisted server-side and we perform no advertising or profiling. Where a transfer requires safeguards, we rely on Standard Contractual Clauses or equivalent mechanisms with our providers. You may contact us to request details of the safeguards in place. You also have the right to lodge a complaint with your local supervisory authority.</p>
+    </div>
+
+    <div class="section">
+      <h2>12. Third-Party Services</h2>
       <p>The Service integrates with the following third-party services, each governed by its own privacy policy:</p>
       <ul>
-        <li><strong>Apple App Store</strong> — for app distribution and in-app purchases</li>
-        <li><strong>Sign in with Apple</strong> — for Apple ID authentication</li>
-        <li><strong>Google Sign-In</strong> — for Google account authentication</li>
-        <li><strong>AI model providers</strong> — for content generation (text, image, video, speech)</li>
-        <li><strong>Cloud hosting</strong> — for server infrastructure and data storage</li>
+        <li><strong>Apple App Store</strong> — app distribution, in-app purchases, subscription management</li>
+        <li><strong>Sign in with Apple</strong> — Apple ID authentication</li>
+        <li><strong>Google Sign-In</strong> — Google account authentication. Not currently offered as a registration option; retained only so accounts created with it can still sign in</li>
+        <li><strong>Alibaba Cloud Model Studio</strong> — text, image and video generation</li>
+        <li><strong>xAI</strong> — image generation</li>
+        <li><strong>OpenRouter</strong> — routing to third-party large language and image models</li>
+        <li><strong>Apple Speech framework</strong> — operating-system speech-to-text for voice input; audio is handled by Apple, never by us</li>
+        <li><strong>Cloud hosting and object storage</strong> — server infrastructure and storage of images you generate</li>
       </ul>
-      <p>We are not responsible for the privacy practices of these third parties. We encourage you to review their privacy policies.</p>
+      <p>We are not responsible for the privacy practices of these third parties, and we encourage you to review their policies. We select them as service providers and restrict their use of your data contractually, but their internal processing is outside our control.</p>
     </div>
 
     <div class="section">
-      <h2>11. Cookies & Tracking</h2>
-      <p>The Mythal mobile app does not use browser cookies. We may use device identifiers and analytics tokens for app performance monitoring and crash reporting.</p>
-      <p>We do not use third-party advertising SDKs or cross-app tracking in the mobile application.</p>
+      <h2>13. Cookies, Tracking &amp; Advertising</h2>
+      <p><strong>The Mythal mobile app uses no browser cookies, no third-party advertising SDKs, no analytics SDKs, no crash-reporting SDKs, and no cross-app or cross-site tracking.</strong> We do not access the Apple advertising identifier (IDFA) and we do not require Apple's App Tracking Transparency permission.</p>
+      <p>We do not use persistent advertising identifiers of any kind. Session state is maintained through an authentication token stored securely on your device, which identifies your account and is not used for tracking or advertising.</p>
+      <p>The <strong>Privacy Policy web page you are reading</strong> is a static document. It sets no cookies, loads no third-party scripts, and runs no analytics.</p>
     </div>
 
     <div class="section">
-      <h2>12. Changes to This Policy</h2>
-      <p>We may update this Privacy Policy from time to time. We will notify you of material changes through the app or via email. The "Effective Date" at the top indicates when the latest revision was made.</p>
-      <p>Your continued use of the Service after changes take effect constitutes acceptance of the updated policy.</p>
+      <h2>14. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. We will notify you of material changes through the app or by email. The "Effective Date" at the top indicates when the latest revision was made.</p>
+      <p>Your continued use of the Service after changes take effect constitutes acceptance of the updated policy. If you do not accept a material change, you should stop using the Service and may use <strong>Delete Account</strong> to remove your data.</p>
+      <p><strong>Version history:</strong> September 5, 2026 — added California (CCPA/CPRA) and other U.S. state privacy sections; corrected the description of chat message storage to reflect that messages are not retained on our servers; added per-category retention periods; disclosed coarse geolocation, time zone and user agent collection; disclosed content-maturity classification and the inferences we draw; corrected the account deletion timeline from 30 days to immediate.</p>
     </div>
 
     <div class="section">
-      <h2>13. Contact Us</h2>
-      <p>If you have questions or concerns about this Privacy Policy, please contact us:</p>
-      <p><strong>Email: support@mythal.app</strong></p>
+      <h2>15. Contact Us</h2>
+      <p>If you have questions or concerns about this Privacy Policy, or about our data practices, contact us:</p>
+      <ul>
+        <li><strong>Email:</strong> support@mythal.app</li>
+        <li><strong>For CCPA / CPRA requests:</strong> use the subject line "CCPA Request" — this is our designated channel for California consumer requests under §1798.130</li>
+        <li><strong>For other U.S. state privacy requests:</strong> use the subject line "Privacy Request"</li>
+        <li><strong>To delete your account and data immediately:</strong> use Delete Account in the app (Settings → More → Delete Account). No email is required</li>
+      </ul>
+      <p>We operate exclusively online and have no physical retail location, so email is our designated method for receiving consumer privacy requests. We aim to acknowledge every request within 10 business days.</p>
+      <p>You may also reach the <strong>California Attorney General</strong> at oag.ca.gov/privacy/consumer-privacy-rights or the <strong>California Privacy Protection Agency</strong> at cppa.ca.gov if you are unsatisfied with how we handle a request.</p>
     </div>
 
     <footer class="footer">
       <p><span class="brand">Mythal</span> — AI-Powered Immersive Storytelling</p>
-      <p>&copy; 2025 Mythal. All rights reserved.</p>
+      <p>&copy; 2026 Mythal. All rights reserved.</p>
     </footer>
   </div>
 
@@ -186,12 +483,69 @@
   <div id="content-zh" style="display:none">
     <header class="header">
       <h1>Mythal 隐私政策</h1>
-      <p class="meta">生效日期：2025 年 9 月 1 日</p>
+      <p class="meta">生效日期：2026 年 9 月 5 日</p>
     </header>
 
     <div class="section">
-      <p>Mythal（"我们"）尊重您的隐私，致力于保护您与我们分享的个人信息。本隐私政策说明了我们收集哪些信息、如何使用这些信息，以及您拥有的选择权。</p>
+      <p>Mythal（"我们"）尊重您的隐私，致力于保护您与我们分享的个人信息。本隐私政策说明我们收集哪些信息、如何使用、保留多久，以及您拥有的选择权和法定权利。</p>
       <p>使用 Mythal 应用即表示您同意按照本政策所述方式收集和使用您的信息。</p>
+      <p><strong>加州居民：</strong>请阅读<strong>第 8 节（加州隐私权利）</strong>，该节补充本政策，如有冲突以该节为准。<strong>其他设有综合隐私法的美国州居民：</strong>请阅读<strong>第 9 节</strong>。</p>
+      <p>Mythal 是仅限成人的服务，只面向 18 岁及以上用户，包含成人向、带性暗示的虚构角色扮演内容。</p>
+    </div>
+
+    <div class="section" id="notice-at-collection-zh">
+      <h2>收集告知（Notice at Collection）</h2>
+      <p>依据《加州消费者隐私法》（Cal. Civ. Code §1798.100）的要求，我们在收集您个人信息之时或之前提供本告知。本告知汇总我们收集的每一类信息、收集目的、是否出售或共享，以及保留期限。</p>
+      <p><strong>下列任何类别的个人信息，我们均不出售、不共享。</strong>我们从未出售或共享个人信息，也不将其用于跨场景行为广告。</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>信息类别</th>
+              <th>收集目的</th>
+              <th>保留期限</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>标识符</strong> — 邮箱地址或 Apple subject 标识符、昵称、IP 地址</td>
+              <td>创建并验证您的账户、防范未授权访问，以及选择就近的区域服务端点</td>
+              <td>账户存续期间。注销后账户记录会匿名化，IP 地址不再与您关联</td>
+            </tr>
+            <tr>
+              <td><strong>凭证信息</strong> — 加盐后的密码哈希</td>
+              <td>验证登录。我们无法读取您的密码，也绝不明文存储</td>
+              <td>账户存续期间</td>
+            </tr>
+            <tr>
+              <td><strong>敏感个人信息</strong> — 您自行选择的年龄段（18–22、23–25、26–30、31–35、35+），以及您创作的角色扮演内容中可能揭示性生活或性取向的信息</td>
+              <td>年龄段用于在解锁成人内容前确认您已满 18 岁；成人内容信号仅用于保持角色不崩人设，并将请求路由到不会中途拒答的模型</td>
+              <td>年龄段在账户存续期间保留，注销时删除。您的消息内容从不存储在我们的服务器上，用于路由判定的命中词也不会写入线上日志</td>
+            </tr>
+            <tr>
+              <td><strong>商业信息</strong> — 宝石余额、购买记录、订阅状态</td>
+              <td>处理 App Store 购买、发放所购权益、发放会员宝石赠送，以及处理退款</td>
+              <td>财务记录在账户注销后按法定义务例外（Cal. Civ. Code §1798.105(d)(1)）保留 7 年</td>
+            </tr>
+            <tr>
+              <td><strong>互联网或电子活动信息</strong> — 会话时间戳、使用的功能、token 与生成次数、错误报告</td>
+              <td>运营与改进服务、计量宝石消耗，以及识别欺诈或滥用</td>
+              <td>账户存续期间。使用明细记录在您注销账户时删除</td>
+            </tr>
+            <tr>
+              <td><strong>音频信息</strong> — 您使用长按说话时的语音</td>
+              <td>将语音转为文字，便于您免手打输入消息</td>
+              <td>转写由操作系统的语音框架（iOS 上为 Apple Speech）完成，而非 Mythal。Apple 可能根据您的系统设置在您的设备上或在其自有服务器上处理音频。我们只接收转写后的文本，从不接收、存储或处理音频</td>
+            </tr>
+            <tr>
+              <td><strong>推断信息</strong> — 内容分级与推断出的互动模式</td>
+              <td>选择合适的语言模型，并保持角色回复的一致性</td>
+              <td>不做持久化。线上仅记录路由结论，不记录命中词</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>完整的收集范围说明见<strong>第 1 节</strong>；各类别的保留期限见<strong>第 5 节</strong>；您在加州法律下的权利及行使方式见<strong>第 8 节</strong>。如需提交请求，请发送邮件至 <strong>support@mythal.app</strong>。</p>
     </div>
 
     <div class="section">
@@ -199,153 +553,393 @@
 
       <h3>1.1 账户信息</h3>
       <ul>
-        <li><strong>邮箱地址</strong> — 用于账户创建和身份验证</li>
-        <li><strong>Apple ID / Google ID token</strong> — 用于社交登录（我们仅存储 subject 标识符，不存储您的 Apple/Google 密码）</li>
+        <li><strong>邮箱地址</strong> — 用于账户创建和身份验证（仅在您使用邮箱注册时收集）</li>
+        <li><strong>Apple ID subject 标识符</strong> — 用于"通过 Apple 登录"。我们仅存储 Apple 签发的不透明 subject 标识符，绝不存储您的 Apple 密码</li>
+        <li><strong>Google ID subject 标识符</strong> — 仅涉及此前使用 Google 登录注册的账户。应用当前不提供 Google 登录入口，但为了让这些既有账户仍能登录，我们会保留该标识符</li>
+        <li><strong>密码</strong> — 仅以加盐哈希形式存储，绝不存明文，我们无法还原</li>
         <li><strong>昵称</strong> — 您在应用内的显示名称</li>
         <li><strong>语言偏好</strong> — 用于界面本地化</li>
+        <li><strong>您选择提供的资料</strong> — 头像图片、自我描述、性别，以及年龄验证时您选择的年龄段</li>
       </ul>
 
-      <h3>1.2 使用数据</h3>
+      <h3>1.2 年龄验证数据</h3>
+      <p>由于 Mythal 含成人内容，我们在开放访问前会验证您已年满 18 岁。我们收集：</p>
       <ul>
-        <li><strong>聊天消息</strong> — 您发送的提示词和 AI 生成的回复，用于对话历史和服务改进</li>
-        <li><strong>角色数据</strong> — 您创建的角色，包括名称、描述和 AI 生成的视觉内容</li>
-        <li><strong>交互日志</strong> — 会话时间戳、使用的功能和错误报告</li>
+        <li><strong>自行声明的年龄段</strong> — 固定区间之一（18–22、23–25、26–30、31–35、35+）。我们不要求也不询问您的确切出生日期</li>
+        <li><strong>验证记录</strong> — 所使用的验证方式与验证时间戳</li>
       </ul>
 
-      <h3>1.3 交易数据</h3>
+      <h3>1.3 您创作的内容</h3>
       <ul>
-        <li><strong>购买收据</strong> — Apple App Store 交易 ID 和收据，用于订阅和宝石管理</li>
-        <li><strong>支付记录</strong> — 订单 ID、商品 ID 和交易金额（由 Apple 处理；我们不存储信用卡或支付详情）</li>
+        <li><strong>您创建的角色</strong> — 名称、简介、背景设定、开场白、标签，以及您生成并选择保留的 AI 立绘。这些<strong>会</strong>存储在我们的服务器上，以便公开角色能被其他用户发现</li>
+        <li><strong>您提交的反馈</strong> — 反馈文本，以及您附上的一切截图或图片</li>
+      </ul>
+      <p><strong>人设仅存储在您的设备上。</strong>您在角色扮演中为自己设定的用户侧人设 — 包括名称、描述与人设图片 — 保存在您设备上应用的本地存储中，从不上传到我们的服务器或对象存储。聊天时人设文本会作为提示词的一部分随该次请求传输，处理方式与第 1.4 节所述的消息完全相同。</p>
+
+      <h3>1.4 对话数据 — 重要说明</h3>
+      <p><strong>我们的服务器不存储您的聊天消息。</strong> 这是有意的架构设计：</p>
+      <ul>
+        <li>您的提示词与 AI 回复仅在请求期间传输到我们的服务器，用于转发给 AI 模型提供商并将结果流式回传给您。<strong>它们不会被写入任何服务端数据库。</strong></li>
+        <li>对话历史<strong>仅存储在您的设备上</strong>，位于应用的本地数据库中。若您删除应用或其数据，该历史即消失，我们无法为您恢复。</li>
+        <li>由于服务端不留存消息，我们无法在数据请求中披露、导出或恢复您的对话历史。对话副本只存在于您的设备上。</li>
+        <li>会话<strong>元数据</strong>会在服务端保留 — 例如会话是否存在、标题、所用模型、时间戳。元数据不含您的消息文本，也不含 AI 回复内容。</li>
+      </ul>
+      <p>同样，我们的生产环境服务器日志<strong>不</strong>包含您的消息文本或 AI 回复。日志只记录运行指标（请求标识、模型名、延迟、token 数、错误码）。</p>
+
+      <h3>1.5 语音输入</h3>
+      <ul>
+        <li>使用按住说话时，语音识别由<strong>操作系统自带的语音框架</strong>完成（iOS 上为 Apple Speech）。Mythal 接收的是识别后的文本，不是录音。</li>
+        <li><strong>我们不录制、不存储、不传输您的声音。</strong> 相关音频处理受 Apple 隐私政策约束，而非我们的政策。</li>
+        <li>角色语音播放（TTS）按需从文本合成音频。我们不采集或克隆您的声音，也不会据此建立声纹。</li>
       </ul>
 
-      <h3>1.4 技术数据</h3>
+      <h3>1.6 交易数据</h3>
       <ul>
-        <li>设备型号、操作系统版本和应用版本</li>
-        <li>IP 地址（用于安全和区域模型选择）</li>
-        <li>国家/地区代码（来自设备语言设置，用于内容区域化）</li>
-        <li>网络类型（WiFi/蜂窝网络）</li>
+        <li><strong>购买记录</strong> — Apple App Store 交易标识符、商品标识符、金额、币种、订单状态，用于校验并交付购买内容</li>
+        <li><strong>收据数据</strong> — Apple 交易凭证，保留以便重新校验订阅续期并处理退款</li>
+        <li><strong>虚拟货币台账</strong> — 您的宝石余额及每笔增减记录</li>
+        <li>我们<strong>不</strong>接收或存储您的信用卡号、银行信息或任何其他支付工具信息。全部支付处理由 Apple 完成。</li>
       </ul>
+
+      <h3>1.7 技术数据</h3>
+      <ul>
+        <li><strong>IP 地址</strong> — 用于限频、防滥用，以及选择合适的区域化 AI 模型工作区。我们据此推断大致国家，而非精确位置</li>
+        <li><strong>国家/地区代码</strong> — 取自您的设备区域设置（非 GPS），用于选择区域合规规则</li>
+        <li><strong>时区</strong> — 取自设备，用于每日签到的日期判定</li>
+        <li><strong>操作系统名称与应用语言标签</strong> — 随每次请求发送，用于兼容性与本地化</li>
+        <li><strong>HTTP User-Agent 字符串</strong> — 任何 Web 服务器都会自动收到，用于排查问题</li>
+        <li><strong>使用指标</strong> — 所用 AI 模型名、token 数、宝石消耗、功能交互、错误报告。这些是聚合运行数据，不含您的消息内容</li>
+      </ul>
+      <p><strong>我们不收集：</strong>精确 GPS 位置、通讯录、您主动上传图片之外的相册内容、广告标识符（IDFA），以及任何跨应用追踪标识符。</p>
     </div>
 
     <div class="section">
       <h2>2. 我们如何使用您的信息</h2>
       <p>我们将收集的信息用于：</p>
       <ul>
-        <li><strong>提供服务</strong> — 验证您的身份、处理对话、生成 AI 内容和管理您的账户</li>
-        <li><strong>处理交易</strong> — 验证购买、管理订阅和发放宝石</li>
-        <li><strong>改进服务</strong> — 分析使用模式、排查问题和开发新功能</li>
-        <li><strong>保障安全</strong> — 检测和防止欺诈、滥用和安全事件</li>
-        <li><strong>通信</strong> — 发送服务相关通知（如订阅续订、政策更新）</li>
+        <li><strong>提供服务</strong> — 验证您的身份、将提示词路由至 AI 模型、流式回传响应、维护您的账户</li>
+        <li><strong>执行年龄限制</strong> — 在开放成人内容前确认您已满 18 岁</li>
+        <li><strong>处理交易</strong> — 校验购买、管理订阅、增减宝石、处理退款</li>
+        <li><strong>选择合适模型</strong> — 将部分成人向对话路由到内容政策允许的 AI 提供商，避免剧情中途断裂。该路由使用从您消息中提取的关键词信号，详见第 8.4 节</li>
+        <li><strong>运营与安全保障</strong> — 限频、防欺诈与滥用、调试与错误诊断</li>
+        <li><strong>改进服务</strong> — 分析聚合使用指标、开发新功能</li>
+        <li><strong>通信</strong> — 发送服务相关通知，如订阅续订与政策更新</li>
       </ul>
+      <p>我们不会将您的个人信息用于会对您产生法律效力或类似重大影响的自动化决策。</p>
     </div>
 
     <div class="section">
       <h2>3. AI 处理与您的数据</h2>
-      <p>当您与 AI 角色互动时，您的消息会被发送到第三方 AI 模型提供商进行处理：</p>
+      <p>当您与 AI 角色互动时，您的消息文本会被传输给第三方 AI 模型提供商以生成回复。这些提供商是我们的<strong>服务提供商</strong> — 他们按我们的指示处理您的内容，以交付您请求的功能：</p>
       <ul>
-        <li><strong>文本生成</strong> — 由已注册的 LLM 提供商（如阿里云百炼、DeepSeek）通过 OpenAI 兼容 API 协议处理</li>
-        <li><strong>图片生成</strong> — 由 AI 图片模型提供商（如 FLUX、Wan、xAI Grok）处理</li>
-        <li><strong>视频生成</strong> — 由 AI 视频模型提供商处理</li>
-        <li><strong>语音合成 (TTS)</strong> — 由文字转语音服务提供商处理</li>
+        <li><strong>文本生成</strong> — 阿里云百炼（通义千问系列）与经 OpenRouter 路由的开源模型，采用 OpenAI 兼容 API</li>
+        <li><strong>图片生成</strong> — 阿里云（万相）、xAI（Grok Imagine），以及经 OpenRouter 路由的模型（FLUX）</li>
+        <li><strong>视频生成</strong> — 第三方 AI 视频模型提供商</li>
+        <li><strong>语音合成 (TTS)</strong> — 第三方文字转语音提供商</li>
+        <li><strong>云基础设施与对象存储</strong> — 用于托管，以及存储您生成的图片</li>
       </ul>
-      <p>这些提供商根据其自身的隐私政策和数据处理实践处理您的数据。我们选择的提供商承诺不将 API 输入用于模型训练。我们不会向这些 AI 提供商发送个人身份信息（如您的邮箱或姓名）——仅发送您的提示词和对话上下文内容。</p>
+      <p><strong>我们发送的内容：</strong>您的提示词、生成连贯回复所需的对话上下文，以及（图片生成场景下）角色立绘等参考图；若您设置了头像，也包含您的头像。我们不会向这些提供商发送您的邮箱、昵称、密码、支付数据或其他账户标识符。</p>
+      <p><strong>提供商的数据处理：</strong>各提供商依据其自身隐私政策与条款处理这些内容。我们优先选择公开条款声明不将 API 输入用于模型训练的提供商，并在有选择空间时以此为准。但我们无法控制这些提供商的内部处理，也无法就其留存或处理方式向您作出绝对保证。若某提供商的条款允许其为滥用监测而留存，您的提示词内容可能在该提供商处依其政策被短期保留。您应当假定：您在对话中输入的任何内容，都可能被提供商的系统读取。</p>
+      <p><strong>对您的提示：</strong>请不要在提示词中包含任何您不希望第三方 AI 提供商处理的信息 — 特别是不要包含真实人物的姓名、私人身份细节，或未经同意的第三方信息。</p>
     </div>
 
     <div class="section">
       <h2>4. 数据共享</h2>
-      <p><strong>我们不会将您的个人信息出售给第三方。</strong></p>
-      <p>我们仅在以下情况下可能共享您的信息：</p>
+      <p><strong>我们不出售您的个人信息，也不为跨场景行为广告而共享您的个人信息。</strong>过去 12 个月内我们从未这样做过。</p>
+      <p>我们仅在以下情形披露个人信息：</p>
       <ul>
-        <li><strong>服务提供商</strong> — 与帮助我们运营服务的第三方公司（AI 模型提供商、云托管、支付处理商）共享，合同义务要求其保护您的数据</li>
-        <li><strong>法律要求</strong> — 法律、法院命令或政府机构要求时</li>
-        <li><strong>安全保障</strong> — 为保护 Mythal、我们的用户或公众的权利、财产或安全</li>
-        <li><strong>业务转让</strong> — 与合并、收购或资产出售相关</li>
+        <li><strong>服务提供商</strong> — 协助我们运营服务的公司（AI 模型提供商、云托管与对象存储、负责支付处理的 Apple），均为业务目的而委托，并受保护数据、仅按我们指示使用的义务约束</li>
+        <li><strong>法律要求</strong> — 法律、传票、法院命令或政府机构要求时</li>
+        <li><strong>安全保障</strong> — 为保护 Mythal、我们的用户或公众的权利、财产或安全，包括调查涉嫌违法内容</li>
+        <li><strong>业务转让</strong> — 与合并、收购、重组或资产出售相关时，您的信息将作为业务资产转移，受让方须受本政策约束</li>
+        <li><strong>经您同意</strong> — 您指示我们披露时，例如您提交反馈并附上截图</li>
       </ul>
+      <p>您以<strong>公开</strong>可见性创建的角色，会连同您为其选择的名称、简介、立绘和标签一起对其他用户可见。标记为<strong>私密</strong>的内容不会展示给其他用户。</p>
     </div>
 
     <div class="section">
       <h2>5. 数据保留</h2>
-      <p>我们在您的账户活跃期间或提供服务所需的期限内保留您的信息。具体而言：</p>
+      <p>我们仅在本政策所述目的所需期限内，或法律要求的期限内保留个人信息。按类别的保留期限如下：</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>类别</th><th>保留期限</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>聊天消息文本与 AI 回复</td><td><strong>服务器永不留存。</strong>仅保存在您的设备上，直到您清除应用本地数据</td></tr>
+            <tr><td>账户资料（邮箱、昵称、头像、性别、年龄段）</td><td>账户存续期间。注销账户时<strong>立即匿名化</strong></td></tr>
+            <tr><td>您创建的角色、生成的图片与视频</td><td>账户存续期间。注销账户时删除，包括已存储的图片与视频文件</td></tr>
+            <tr><td>人设</td><td><strong>服务器永不留存。</strong>仅保存在您的设备上，直到您清除应用本地数据</td></tr>
+            <tr><td>会话元数据（标题、所用模型、时间戳）</td><td>账户存续期间。注销账户时删除</td></tr>
+            <tr><td>年龄验证记录</td><td>账户存续期间。注销账户时删除</td></tr>
+            <tr><td>AI 使用指标（模型名、token 数、宝石消耗）</td><td>账户存续期间。注销账户时删除</td></tr>
+            <tr><td>您提交的反馈</td><td>处理完结前保留，随后删除。注销账户时删除</td></tr>
+            <tr><td>运行日志（不含消息内容）</td><td>滚动保留，<strong>不超过 90 天</strong></td></tr>
+            <tr><td>交易、订单、订阅与宝石台账记录</td><td><strong>交易后保留 7 年，且注销账户后仍保留。</strong>见下文</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <h3>5.1 注销账户会删除什么</h3>
+      <p>当您在应用内使用<strong>注销账户</strong>时，删除<strong>立即生效</strong>，不存在延迟。我们会：</p>
       <ul>
-        <li><strong>账户数据</strong> — 账户活跃期间保留</li>
-        <li><strong>聊天历史</strong> — 在每次对话期间保留，受上下文窗口限制约束</li>
-        <li><strong>交易记录</strong> — 按财务法规要求至少保留 7 年</li>
-        <li><strong>AI 使用记录</strong> — 保留用于计费审计和服务改进</li>
+        <li>不可逆地匿名化您的账户记录：清空邮箱、昵称、头像、密码哈希、性别、年龄段、自我描述与社交登录标识符，并将账户标记为已删除，使其无法再用于登录</li>
+        <li>删除您的角色、会话、关系数据、活跃记录、反馈、年龄验证记录、每日签到、任务记录与 AI 使用指标</li>
+        <li>从对象存储中删除您上传及生成的图片与视频文件</li>
+        <li>吊销全部登录令牌，使您在所有设备上退出登录</li>
+        <li>对于 Sign in with Apple 账户，撤销 Apple 授权，使 Mythal 不再出现在您 Apple ID 的已连接应用中</li>
       </ul>
-      <p>删除账户后，我们将在 30 天内删除您的个人数据，法律要求保留的除外。</p>
+      <p>由于您的人设与对话历史仅存储在设备上，不在我们的注销流程范围内 — 它们会在您删除应用或清除应用数据时移除，我们对两者均不持有任何服务端副本。</p>
+      <h3>5.2 注销账户不会删除什么，以及原因</h3>
+      <p>以下内容在注销后被有意保留，且形式上已不再关联任何可识别您的信息：</p>
+      <ul>
+        <li><strong>财务与交易记录</strong> — 订单记录、订阅记录、Apple 收据数据、宝石台账，保留 <strong>7 年</strong></li>
+      </ul>
+      <p><strong>保留的法律依据：</strong>保留这些记录是为遵守税务、会计与消费者保护法律，为处理可能在注销后才到达的支付争议、拒付、退款与订阅对账，以及为此类争议举证。这属于 CCPA §1798.105(d)(1)（遵守法定义务）与 §1798.105(d)(3)（发现并防范欺诈或非法活动）规定的删除权例外。7 年期限届满后这些记录将被删除。</p>
+      <p><strong>订阅不会自动取消：</strong>注销 Mythal 账户<strong>不会</strong>取消 App Store 订阅。您必须在 Apple 订阅设置中单独取消，以免继续扣费。应用会在注销页面提醒您这一点。</p>
     </div>
 
     <div class="section">
       <h2>6. 数据安全</h2>
       <p>我们采用行业标准安全措施保护您的信息：</p>
       <ul>
-        <li>所有传输中的数据均使用 TLS/SSL 加密</li>
-        <li>密码经过哈希处理，从不以明文存储</li>
-        <li>认证令牌安全管理，具有自动过期机制</li>
-        <li>个人数据的访问仅限于授权人员</li>
+        <li>传输中的数据全部使用 TLS 加密</li>
+        <li>密码经加盐哈希处理，绝不以明文存储</li>
+        <li>登录令牌以不可逆摘要形式存储，刷新时轮换，并自动过期</li>
+        <li>生产数据的访问仅限授权人员</li>
+        <li>由于聊天内容从不落库，即使服务器被攻破也无法泄露您的对话历史</li>
       </ul>
-      <p>但是，互联网传输或电子存储没有 100% 安全的方法。虽然我们努力使用商业上可接受的手段保护您的信息，但无法保证绝对安全。</p>
+      <p>但是，互联网传输或电子存储没有 100% 安全的方法。虽然我们努力采用商业上可接受的手段保护您的信息，但无法保证绝对安全。</p>
     </div>
 
     <div class="section">
-      <h2>7. 您的权利</h2>
-      <p>根据您所在的司法管辖区，您可能拥有以下权利：</p>
+      <h2>7. 您的隐私权利（通用）</h2>
+      <p>根据您所在的司法管辖区，您可能拥有以下部分或全部权利：</p>
       <ul>
         <li><strong>访问权</strong> — 请求获取我们持有的关于您的个人数据副本</li>
-        <li><strong>更正权</strong> — 请求更正不准确的数据</li>
-        <li><strong>删除权</strong> — 请求删除您的个人数据（通过应用内的"删除账户"功能）</li>
+        <li><strong>更正权</strong> — 请求更正不准确的数据。您也可以直接在应用内修改昵称、头像、性别、年龄段、自我描述与语言</li>
+        <li><strong>删除权</strong> — 通过应用内的<strong>注销账户</strong>（设置 → 更多 → 注销账户）删除个人数据，立即生效</li>
         <li><strong>可携权</strong> — 请求以机器可读格式获取您的数据</li>
-        <li><strong>撤回同意</strong> — 您可以随时停止使用本服务并删除账户</li>
+        <li><strong>撤回同意</strong> — 随时停止使用本服务并注销账户</li>
+        <li><strong>反对权与限制权</strong> — 在您所在地法律允许时，反对或限制特定处理</li>
       </ul>
-      <p>如需行使这些权利，请联系 <strong>support@mythal.app</strong>。</p>
+      <p><strong>行使任何权利的方式：</strong>发送邮件至 <strong>support@mythal.app</strong>，主题写明"Privacy Request"（隐私请求）。我们如何验证请求与响应时限见第 8.9 节。</p>
+      <p><strong>关于访问权与可携权的重要限制：</strong>由于我们不在服务端存储聊天消息（第 1.4 节），我们无法在数据副本中提供您的对话历史，该数据只存在于您的设备上。除此之外我们持有的全部信息 — 资料、角色、交易、使用指标 — 均可提供。</p>
     </div>
 
     <div class="section">
-      <h2>8. 未成年人隐私</h2>
-      <p>本服务面向 18 岁及以上用户。我们不会有意收集未满 18 周岁未成年人的个人信息。如果我们发现收集了未满 18 周岁未成年人的信息，将立即删除。</p>
-      <p>如果您认为我们无意中收集了未成年人的信息，请联系 <strong>support@mythal.app</strong>。</p>
-    </div>
+      <h2>8. 加州隐私权利（CCPA / CPRA）</h2>
+      <p>如果您是加州居民，本节适用于您。本节补充本政策其余内容，如有冲突以本节为准。我们使用《2018 年加州消费者隐私法》（经《2020 年加州隐私权法》修订，合称"CCPA"）定义的"个人信息""出售""共享""敏感个人信息""业务目的""服务提供商""承包商"等术语。</p>
 
-    <div class="section">
-      <h2>9. 国际数据传输</h2>
-      <p>您的信息可能被传输到您所在国家/地区以外的国家/地区并进行处理。我们的服务器位于美国。使用本服务即表示您同意将数据传输到美国及我们服务提供商运营的其他司法管辖区。</p>
-      <p>我们确保国际传输符合适用的数据保护法律，并已采取适当的保障措施。</p>
-    </div>
+      <h3>8.1 我们不出售或共享您的个人信息</h3>
+      <p><strong>在过去 12 个月内，Mythal 未出售个人信息，也未为跨场景行为广告共享个人信息。</strong>我们不做这两件事，目前没有开始做的打算。</p>
+      <p>具体来说：我们不使用任何第三方广告 SDK、归因或广告网络 SDK，不进行跨应用或跨站追踪，也不访问 Apple 广告标识符（IDFA）。我们不会为金钱或其他有价对价向任何人披露个人信息。</p>
+      <p>由于我们既不出售也不共享，我们无需提供"不出售或共享我的个人信息"链接，也无需将全球隐私控制（GPC）信号作为退出请求予以响应 — 因为没有可供退出的出售或共享行为。若未来发生变化，我们会先更新本政策、加入法定链接并开始响应退出偏好信号，然后再实施。</p>
 
-    <div class="section">
-      <h2>10. 第三方服务</h2>
-      <p>本服务集成了以下第三方服务，每项服务均受其自身隐私政策约束：</p>
+      <h3>8.2 过去 12 个月收集的个人信息类别</h3>
+      <p>下表采用 Cal. Civ. Code §1798.140(v) 定义的类别。"为业务目的披露"指为运营服务而向服务提供商或承包商共享。</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>CCPA 类别</th><th>我们收集的示例</th><th>出售</th><th>共享</th><th>为业务目的披露</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>A. 标识符</td>
+              <td>邮箱地址；Apple/Google subject 标识符；内部用户 ID；IP 地址</td>
+              <td>否</td><td>否</td><td>是 — 云托管提供商</td>
+            </tr>
+            <tr>
+              <td>B. 个人信息（Cal. Civ. Code §1798.80(e)）</td>
+              <td>昵称；账户凭证（哈希密码）</td>
+              <td>否</td><td>否</td><td>是 — 云托管提供商</td>
+            </tr>
+            <tr>
+              <td>C. 受保护分类特征</td>
+              <td>自选性别；自行声明的年龄段</td>
+              <td>否</td><td>否</td><td>是 — 云托管提供商</td>
+            </tr>
+            <tr>
+              <td>D. 商业信息</td>
+              <td>购买与订阅记录；Apple 收据数据；宝石余额与台账；浏览或购买的商品</td>
+              <td>否</td><td>否</td><td>是 — Apple（支付处理）、云托管提供商</td>
+            </tr>
+            <tr>
+              <td>E. 生物识别信息</td>
+              <td><strong>不收集。</strong>我们不采集指纹、面部几何特征或声纹</td>
+              <td>否</td><td>否</td><td>否</td>
+            </tr>
+            <tr>
+              <td>F. 互联网或其他电子网络活动</td>
+              <td>功能交互；所用 AI 模型名；token 数；宝石消耗；错误报告；会话元数据；您创作并存储于我方服务的内容（角色、反馈）</td>
+              <td>否</td><td>否</td><td>是 — AI 模型提供商、云托管提供商</td>
+            </tr>
+            <tr>
+              <td>G. 地理位置数据</td>
+              <td><strong>仅粗粒度</strong> — 由 IP 地址与设备区域设置推断的国家；设备时区。<strong>不收集精确地理位置</strong>，不使用 GPS</td>
+              <td>否</td><td>否</td><td>是 — 云托管提供商</td>
+            </tr>
+            <tr>
+              <td>H. 音频、电子、视觉或类似信息</td>
+              <td>您上传的图片（头像、角色参考图、反馈截图）；您生成的图片与视频。<strong>无录音</strong> — 语音输入由操作系统的语音框架转写，其可能在您的设备上或在自己的服务器上处理音频；我们只接收转写后的文本</td>
+              <td>否</td><td>否</td><td>是 — AI 图片/视频提供商、对象存储</td>
+            </tr>
+            <tr>
+              <td>I. 职业或就业信息</td>
+              <td><strong>不收集</strong></td>
+              <td>否</td><td>否</td><td>否</td>
+            </tr>
+            <tr>
+              <td>J. 教育信息</td>
+              <td><strong>不收集</strong></td>
+              <td>否</td><td>否</td><td>否</td>
+            </tr>
+            <tr>
+              <td>K. 由上述信息推导的推论</td>
+              <td>对话内容成熟度分类（仅用于选择 AI 模型）；推断的偏好互动模式（聊天/叙事）；角色好感度与关系推进指标。详见 8.4</td>
+              <td>否</td><td>否</td><td>否 — 仅内部计算与使用</td>
+            </tr>
+            <tr>
+              <td>L. 敏感个人信息</td>
+              <td>见 8.3</td>
+              <td>否</td><td>否</td><td>是 — AI 模型提供商（仅消息内容）、云托管提供商</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>各类别的保留期限见第 5 节。</p>
+
+      <h3>8.3 敏感个人信息</h3>
+      <p>依据 Cal. Civ. Code §1798.140(ae)，我们收集以下敏感个人信息：</p>
       <ul>
-        <li><strong>Apple App Store</strong> — 用于应用分发和应用内购买</li>
-        <li><strong>通过 Apple 登录</strong> — 用于 Apple ID 认证</li>
-        <li><strong>Google 登录</strong> — 用于 Google 账户认证</li>
-        <li><strong>AI 模型提供商</strong> — 用于内容生成（文本、图片、视频、语音）</li>
-        <li><strong>云托管</strong> — 用于服务器基础设施和数据存储</li>
+        <li><strong>账户凭证</strong> — 您的密码，仅以加盐哈希存储，仅用于验证您的身份</li>
+        <li><strong>揭示性生活或性取向的信息</strong> — Mythal 是成人角色扮演服务。您选择进行的虚构对话、您创建的角色，以及我们据此得出的内容成熟度信号，可能揭示您性生活或性取向的某些方面。我们将其作为敏感个人信息对待</li>
+        <li><strong>您的消息内容</strong> — 您的提示词会传输给 AI 模型提供商以生成回复，但不会存储在我们的服务器上（第 1.4 节）</li>
       </ul>
-      <p>我们不对这些第三方的隐私实践负责。建议您查阅他们的隐私政策。</p>
+      <p><strong>我们不收集：</strong>社会安全号、驾照或护照号、带凭证的金融账户号、精确地理位置、种族或民族出身、宗教或哲学信仰、工会成员身份、基因数据、用于身份识别的生物识别数据、健康数据。</p>
+      <h4>您的限制使用权</h4>
+      <p>依据 Cal. Civ. Code §1798.121，您有权要求我们将敏感个人信息的使用与披露限制在<strong>为履行普通消费者合理预期的服务或提供商品所必需</strong>的范围内。我们已经是这样做的：我们仅将敏感个人信息用于验证您的身份、交付您请求的角色扮演内容、核验您已成年、处理您的支付。我们不将其用于任何其他目的，也不会在 8.4 所述之外用它推断您的特征进行画像。</p>
+      <p>若您希望正式行使限制使用权，请发邮件至 <strong>support@mythal.app</strong>，主题写明"CCPA — Right to Limit"。由于我们的处理本已限于必需范围，行使该权利不会改变您获得的服务。若您希望这些敏感内容本身消失，请使用<strong>注销账户</strong>，它会立即删除。</p>
+
+      <h3>8.4 推论与内容分类</h3>
+      <p>为避免成人角色扮演在剧情中途断裂，我们会对每轮对话的成熟度进行分类，并将成人向对话路由到内容政策允许的 AI 提供商。您应当清楚这具体涉及什么：</p>
+      <ul>
+        <li>我们将您的消息文本与固定的内部关键词表比对以识别成人内容，并推断对话语言以选择正确的模型</li>
+        <li>结果仅是一个路由决定。它<strong>不</strong>用于构建广告画像，<strong>不</strong>被出售或共享，<strong>不</strong>用于任何对您产生法律效力或类似重大影响的决策，也<strong>不</strong>向其他用户展示</li>
+        <li>在生产环境中，命中的关键词<strong>不会</strong>写入我们的日志。日志只记录路由结果（选了哪个模型、属于哪一类原因）</li>
+        <li>我们还会在您创建角色时推断偏好的互动模式（自由聊天 / 沉浸叙事），并按角色跟踪关系推进度以保持长线剧情连贯。两者都只在内部使用</li>
+      </ul>
+
+      <h3>8.5 个人信息的来源</h3>
+      <ul>
+        <li><strong>直接来自您</strong> — 注册资料、资料修改、年龄验证、您创建的角色与人设、您发送的提示词、您上传的图片、您提交的反馈、您进行的购买</li>
+        <li><strong>自动来自您的设备</strong> — IP 地址、设备区域、时区、操作系统、应用语言、User-Agent、使用指标</li>
+        <li><strong>来自 Apple 或 Google</strong> — subject 标识符，以及（在您允许时）使用 Sign in with Apple 或 Google 登录时的隐私中继邮箱</li>
+        <li><strong>来自 Apple 支付系统</strong> — 交易与订阅状态、续订通知、退款通知</li>
+        <li><strong>由我们推导</strong> — 8.4 所述的推论</li>
+      </ul>
+      <p>我们不从数据经纪商处购买个人信息，也不为广告目的从第三方收集个人信息。</p>
+
+      <h3>8.6 业务与商业目的</h3>
+      <p>我们为以下业务与商业目的收集和使用 8.2 中的各类信息：提供并运营您请求的服务；核验您的年龄以便合法提供成人内容；验证您的身份；处理支付并管理虚拟货币；选择并路由至合适的 AI 模型；发现并防范欺诈、滥用与安全事件；调试与维护服务；遵守法律、税务与会计义务；改进并开发服务。</p>
+
+      <h3>8.7 为业务目的披露的接收方</h3>
+      <p>过去 12 个月内，我们将 8.2 所列类别披露给以下类别的服务提供商与承包商：AI 模型提供商（文本、图片、视频、语音合成）；云托管与对象存储提供商；Apple Inc.（应用分发、支付处理、订阅管理、Sign in with Apple）；Google（Google 登录）。每一方均为业务目的而委托，并在合同上被限制不得为自身目的使用您的个人信息。</p>
+
+      <h3>8.8 您的加州权利</h3>
+      <ul>
+        <li><strong>知情权 / 访问权</strong>（§1798.100、§1798.110）— 请求获知我们收集的个人信息类别、来源、业务目的、我们披露给的第三方类别，以及我们持有的具体信息。12 个月内可行使两次</li>
+        <li><strong>删除权</strong>（§1798.105）— 请求删除我们从您处收集的个人信息。<strong>最快的方式是应用内的注销账户功能，立即生效，无需向我们提交请求。</strong>您也可通过邮件请求删除。§1798.105(d) 的例外适用，主要是第 5.2 节所述的财务记录 7 年保留</li>
+        <li><strong>更正权</strong>（§1798.106）— 请求更正不准确的个人信息。大部分字段可直接在应用内编辑</li>
+        <li><strong>退出出售或共享权</strong>（§1798.120）— <strong>不适用</strong>，因为我们既不出售也不共享，没有可供退出的行为</li>
+        <li><strong>限制敏感个人信息使用权</strong>（§1798.121）— 见 8.3</li>
+        <li><strong>不受歧视权</strong>（§1798.125）— 我们不会因您行使 CCPA 权利而拒绝向您提供服务、收取不同价格、提供不同质量的服务，也不会暗示将这样做</li>
+      </ul>
+
+      <h3>8.9 如何行使您的权利</h3>
+      <p><strong>方式。</strong>发送邮件至 <strong>support@mythal.app</strong>，主题写明"CCPA Request"，后接您要行使的权利（例如"CCPA Request — Delete"）。我们完全在线上运营，没有实体零售场所，因此依据 §1798.130(a)(1)，电子邮件是我们指定的受理方式。删除请求也可直接使用应用内的<strong>注销账户</strong>。</p>
+      <p><strong>可验证消费者请求。</strong>在响应前，我们必须核实您就是数据所属人。我们通过将您提供的信息与已有记录比对来验证 — 通常是账户邮箱加昵称；对于 Sign in with Apple 账户，还需通过 Apple 重新认证。我们绝不会向您索要密码。若无法确认您就是相关数据的消费者，我们无法响应，并会说明原因。应用内的注销账户已因登录态完成认证，同样满足删除请求。</p>
+      <p><strong>授权代理人。</strong>依据 §1798.185(a)(7)–(8)，您可以指定授权代理人代为提出请求。代理人提交请求时，我们可能要求提供您书面授权的证明（或代理人持有 Probate Code §4000–4465 项下授权书的证据），也可能要求您本人直接向我们验证身份，或确认您已授予代理人权限。我们不会仅因请求经由授权代理人提出而拒绝。</p>
+      <p><strong>响应时限。</strong>我们会在 10 个工作日内确认收到，并在收到可验证请求后 <strong>45 个自然日</strong>内响应。若需要更多时间 — 最多再延 45 天 — 我们会在最初的 45 天内告知原因。延期仅限一次。</p>
+      <p><strong>形式。</strong>访问请求的响应以便携、可直接使用、机器可读的格式（JSON）通过邮件或安全下载提供，免费。若您在 12 个月内要求提供或删除特定信息超过两次，或请求明显无依据或过度，我们可收取合理费用或拒绝，并会说明该决定。</p>
+      <p><strong>若我们拒绝。</strong>如果我们拒绝或限制您的请求，我们会说明具体理由以及所依据的 CCPA 条款。您可以再次联系我们要求重新考虑。您也有权向<strong>加州总检察长</strong>（oag.ca.gov/privacy/consumer-privacy-rights）或<strong>加州隐私保护局</strong>（cppa.ca.gov）投诉。我们不要求您为提交请求而创建账户，也绝不会仅因您行使权利而要求付费。</p>
+
+      <h3>8.10 未满 16 岁的加州居民</h3>
+      <p>Mythal 仅限 18 岁及以上用户使用，并通过年龄验证步骤控制访问。我们并不确知曾出售或共享任何未满 16 岁消费者的个人信息。由于我们完全不出售或共享个人信息，我们无需取得 §1798.120(c) 要求的未满 16 岁消费者 opt-in 同意，也无需 §1798.120(c)(2) 要求的未满 13 岁消费者的家长 opt-in 同意。若我们得知某用户未满 18 岁，将移除其账户与数据。</p>
+
+      <h3>8.11 "阳光照亮"法（Cal. Civ. Code §1798.83）</h3>
+      <p>加州"阳光照亮"法允许您请求了解上一自然年度内我们为第三方直接营销目的而向其披露的个人信息。<strong>我们不向任何第三方披露个人信息用于其直接营销目的。</strong>因此本法项下无内容可报告。若您仍希望提出请求，请发邮件至 <strong>support@mythal.app</strong>，主题写明"Shine the Light Request"。</p>
+
+      <h3>8.12 出售或共享实践的变更</h3>
+      <p>如果 Mythal 未来开始出售或共享个人信息，我们将更新本政策、在应用内与本页添加"不出售或共享我的个人信息"链接、开始响应全球隐私控制及同等的退出偏好信号，并对任何未满 16 岁的消费者取得 CCPA 要求的 opt-in 同意。我们不会在不告知的情况下做这些事。</p>
     </div>
 
     <div class="section">
-      <h2>11. Cookie 与追踪</h2>
-      <p>Mythal 移动应用不使用浏览器 Cookie。我们可能会使用设备标识符和分析令牌用于应用性能监控和崩溃报告。</p>
-      <p>我们不在移动应用中使用第三方广告 SDK 或跨应用追踪。</p>
+      <h2>9. 其他美国州的隐私权利</h2>
+      <p>如果您居住在设有综合消费者隐私法的州 — 包括弗吉尼亚（VCDPA）、科罗拉多（CPA）、康涅狄格（CTDPA）、犹他（UCPA）、得克萨斯（TDPSA）、俄勒冈、特拉华、爱荷华、蒙大拿、内布拉斯加、新罕布什尔、新泽西、田纳西、明尼苏达 — 您可能拥有与第 8 节类似的权利：确认我们是否处理您的数据、访问、更正、删除、获取便携副本、退出定向广告或数据出售，以及对拒绝决定提出申诉。</p>
+      <p>由于 Mythal 不出售个人信息、不将其用于定向广告、也不为具有法律效力或类似重大影响的决策对您进行画像，<strong>不存在可供退出的定向广告、出售或画像行为</strong>。</p>
+      <p>行使任何权利请发邮件至 <strong>support@mythal.app</strong>，主题写明"Privacy Request"（隐私请求）。我们会在您所在州法律要求的期限内响应 — 通常为 45 天，允许延期一次。若我们拒绝您的请求，会说明理由，并在您所在州法律提供申诉途径时告知您如何申诉。您也可以联系您所在州的总检察长。</p>
+      <p><strong>弗吉尼亚州居民：</strong>我们的服务条款受弗吉尼亚州法律管辖。该条款中的任何内容均不限制您依据《弗吉尼亚消费者数据保护法》享有的权利。</p>
     </div>
 
     <div class="section">
-      <h2>12. 政策变更</h2>
-      <p>我们可能会不时更新本隐私政策。重大变更将通过应用内通知或电子邮件告知。顶部的"生效日期"标明了最新修订的时间。</p>
-      <p>变更生效后继续使用本服务即构成对更新后政策的接受。</p>
+      <h2>10. 未成年人隐私</h2>
+      <p>本服务仅面向 18 岁及以上用户，包含成人向虚构内容。我们不会有意收集任何未满 18 岁者的个人信息。开放访问前必须进行年龄验证，选择未满 18 岁的用户将被拦截。</p>
+      <p>Mythal 不面向儿童，不为儿童设计，也不构成 COPPA 项下"面向儿童的服务"。如果我们发现收集了未满 18 岁者的信息，将立即删除。如果您认为我们无意中收集了未成年人的信息，请联系 <strong>support@mythal.app</strong>。</p>
     </div>
 
     <div class="section">
-      <h2>13. 联系我们</h2>
-      <p>如果您对本隐私政策有任何疑问或顾虑，请联系我们：</p>
-      <p><strong>邮箱：support@mythal.app</strong></p>
+      <h2>11. 国际数据传输</h2>
+      <p>Mythal 在美国运营，我们的服务器位于美国。如果您从美国境外使用本服务，您的信息将被传输至美国并在美国存储和处理，美国提供的保护水平可能不同于您所在的司法管辖区。</p>
+      <p>您的提示词内容还会传输给 AI 模型提供商，其基础设施可能位于美国境外 — 包括阿里云（中国与新加坡区域）、xAI（美国），以及会路由至不同司法管辖区模型主机的 OpenRouter。此类传输是提供您所请求的 AI 生成能力所必需的。</p>
+      <p><strong>对于欧洲经济区、英国与瑞士用户：</strong>我们处理的法律依据包括：履行与您的合同（提供您请求的服务）、我们运营与保障服务的合法利益，以及遵守法定义务（年龄验证、税务与财务记录保存）。在依赖合法利益时，该利益不会被您的权利所压倒，因为聊天内容不落服务端库，且我们不做任何广告或画像。在需要传输保障措施时，我们依赖与提供商之间的标准合同条款（SCC）或同等机制。您可联系我们索取现有保障措施的细节。您也有权向您所在地的监管机构投诉。</p>
+    </div>
+
+    <div class="section">
+      <h2>12. 第三方服务</h2>
+      <p>本服务集成了以下第三方服务，每项均受其自身隐私政策约束：</p>
+      <ul>
+        <li><strong>Apple App Store</strong> — 应用分发、应用内购买、订阅管理</li>
+        <li><strong>通过 Apple 登录</strong> — Apple ID 认证</li>
+        <li><strong>Google 登录</strong> — Google 账户认证。当前不提供该注册入口，仅为让此前通过该方式创建的账户仍可登录而保留</li>
+        <li><strong>阿里云百炼</strong> — 文本、图片与视频生成</li>
+        <li><strong>xAI</strong> — 图片生成</li>
+        <li><strong>OpenRouter</strong> — 路由至第三方大语言模型与图片模型</li>
+        <li><strong>Apple Speech 框架</strong> — 操作系统级语音转文字，用于语音输入；音频由 Apple 处理，我们从不接触</li>
+        <li><strong>云托管与对象存储</strong> — 服务器基础设施，以及您所生成图片的存储</li>
+      </ul>
+      <p>我们不对这些第三方的隐私实践负责，建议您查阅其政策。我们将他们选为服务提供商并在合同上限制其对您数据的使用，但其内部处理不在我们的控制范围内。</p>
+    </div>
+
+    <div class="section">
+      <h2>13. Cookie、追踪与广告</h2>
+      <p><strong>Mythal 移动应用不使用浏览器 Cookie、不使用第三方广告 SDK、不使用分析 SDK、不使用崩溃上报 SDK，也不进行任何跨应用或跨站追踪。</strong>我们不访问 Apple 广告标识符（IDFA），也不需要 Apple 的应用追踪透明度（ATT）授权。</p>
+      <p>我们不使用任何形式的持久化广告标识符。会话状态通过安全存储在您设备上的认证令牌维持，该令牌用于标识您的账户，不用于追踪或广告。</p>
+      <p><strong>您正在阅读的这个隐私政策网页</strong>是静态文档，不设置 Cookie、不加载第三方脚本、不运行任何分析。</p>
+    </div>
+
+    <div class="section">
+      <h2>14. 政策变更</h2>
+      <p>我们可能不时更新本隐私政策。重大变更将通过应用内通知或电子邮件告知。顶部的"生效日期"标明最新修订时间。</p>
+      <p>变更生效后继续使用本服务即构成对更新后政策的接受。若您不接受某项重大变更，应停止使用本服务，并可通过<strong>注销账户</strong>删除您的数据。</p>
+      <p><strong>版本历史：</strong>2026 年 9 月 5 日 — 新增加州（CCPA/CPRA）及其他美国州隐私章节；修正聊天消息存储的描述，明确消息不在我们服务器留存；新增按类别的保留期限；披露粗粒度地理位置、时区与 User-Agent 的收集；披露内容成熟度分类及我们作出的推论；将注销账户的删除时限由 30 天修正为立即生效。</p>
+    </div>
+
+    <div class="section">
+      <h2>15. 联系我们</h2>
+      <p>如果您对本隐私政策或我们的数据处理实践有任何疑问或顾虑，请联系我们：</p>
+      <ul>
+        <li><strong>邮箱：</strong>support@mythal.app</li>
+        <li><strong>CCPA / CPRA 请求：</strong>主题写明"CCPA Request" — 这是我们在 §1798.130 项下为加州消费者请求指定的通道</li>
+        <li><strong>其他美国州隐私请求：</strong>主题写明"Privacy Request"</li>
+        <li><strong>立即删除账户与数据：</strong>使用应用内的注销账户（设置 → 更多 → 注销账户），无需发邮件</li>
+      </ul>
+      <p>我们完全在线上运营，没有实体零售场所，因此电子邮件是我们指定的消费者隐私请求受理方式。我们力争在 10 个工作日内确认每一个请求。</p>
+      <p>如果您对我们处理请求的方式不满意，也可以联系<strong>加州总检察长</strong>（oag.ca.gov/privacy/consumer-privacy-rights）或<strong>加州隐私保护局</strong>（cppa.ca.gov）。</p>
     </div>
 
     <footer class="footer">
       <p><span class="brand">Mythal</span> — AI 驱动的沉浸式故事体验</p>
-      <p>&copy; 2025 Mythal. 保留所有权利。</p>
+      <p>&copy; 2026 Mythal. 保留所有权利。</p>
     </footer>
   </div>
 

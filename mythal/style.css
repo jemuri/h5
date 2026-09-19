@@ -98,6 +98,41 @@ body {
 .section li { margin-bottom: 6px; }
 .section strong { color: var(--text-primary); font-weight: 600; }
 
+/* Tables (CCPA category disclosures) */
+.table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 12px 0;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+.section table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  min-width: 480px;
+}
+.section th,
+.section td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+  line-height: 1.6;
+}
+.section th {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.02);
+  white-space: nowrap;
+}
+.section td { color: var(--text-secondary); }
+.section tbody tr:last-child td { border-bottom: none; }
+.section td:first-child { color: var(--text-primary); font-weight: 500; }
+
 /* Footer */
 .footer {
   margin-top: 40px;
